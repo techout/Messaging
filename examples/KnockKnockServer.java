@@ -4,14 +4,8 @@ import java.net.*;
 import java.io.*;
 
 public class KnockKnockServer {
-
 	public static void main(String[] args) {
-		if(args.length != 1) {
-			System.err.println("Usage: java KnockKnockServer <port number>");
-			System.exit(1);
-		}
-		
-		int portNumber = Integer.parseInt(args[0]);
+		int portNumber = 3636;
 		
 		try(
 			ServerSocket serverSocket = new ServerSocket(portNumber);
